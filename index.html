@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js"></script>
+    <title>My Website</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header
+      class="w-full mx-auto h-24 flex items-center justify-between py-10 px-10 bg-gray-400"
+    >
+      <p class="text-5xl font-bold">MW</p>
+      <ul class="flex gap-5 text-xl font-bold cursor-pointer">
+        <li class="hover:text-white duration-200 transition-all">Home</li>
+        <li class="hover:text-white duration-200 transition-all">Services</li>
+        <li class="hover:text-white duration-200 transition-all">Contact Us</li>
+      </ul>
+      <button
+      onclick="nameFunction()"
+        class="border border-black py-3 px-5 rounded-md cursor-pointer hover:bg-gray-500"
+      >
+        Signin
+      </button>
+    </header>
+
+    <!-- hero section  -->
+    <section
+      class="flex items-center justify-between py-10 w-full mx-auto px-10"
+    >
+      <div class="max-w-1/2 text-base flex flex-col gap-10 font-bold">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, quo!
+          Recusandae in corrupti tempora voluptates reprehenderit dicta!
+          Voluptatum quae quo nihil sint ipsum et laudantium, repellendus dicta!
+          Laudantium optio, neque fugiat cumque eius dolor corrupti cum
+          distinctio minus vero illum amet doloremque alias blanditiis
+          quibusdam. Dignissimos labore enim fugit iusto.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, quo!
+          Recusandae in corrupti tempora voluptates reprehenderit dicta!
+          Voluptatum quae quo nihil sint ipsum et laudantium, repellendus dicta!
+          Laudantium optio, neque fugiat cumque eius dolor corrupti cum
+          distinctio minus vero illum amet doloremque alias blanditiis
+          quibusdam. Dignissimos labore enim fugit iusto.
+        </p>
+      </div>
+
+      <img
+        class="rounded-md w-[500px] h-[500px] object-cover"
+        src="./pic.jpg"
+        alt="hero image"
+      />
+    </section>
+
+    <!-- services section  -->
+    <section class="bg-gray-400 w-full mx-auto px-10 py-10">
+      <p class="text-4xl font-bold text-center">Services</p>
+      <div class="flex items-center justify-center mt-10">
+        <ul class="grid grid-cols-2 gap-10">
+          <li class="flex flex-col items-center border p-20 rounded-xl hover:bg-gray-500 transition-all duration-200 hover:border-0">
+            <h1 id="head" class="text-2xl font-bold">Custom Software Development</h1>
+            <p class="text-base mt-5">
+              Build scalable, secure, and high-performance applications tailored
+              to your business needs. We design and develop web, mobile, and
+              desktop software solutions from scratch or modernize your existing
+              systems. Whether it's an internal tool, SaaS platform, or
+              enterprise application, we deliver solutions that align with your
+              goals and user requirements.
+            </p>
+          </li>
+          <li class="flex flex-col items-center border p-20 rounded-xl hover:bg-gray-500 transition-all duration-200 hover:border-0">
+            <h1 class="text-2xl font-bold">IT Infrastructure Management</h1>
+            <p class="text-base mt-5">
+              Build scalable, secure, and high-performance applications tailored
+              to your business needs. We design and develop web, mobile, and
+              desktop software solutions from scratch or modernize your existing
+              systems. Whether it's an internal tool, SaaS platform, or
+              enterprise application, we deliver solutions that align with your
+              goals and user requirements.
+            </p>
+          </li>
+          <li class="flex flex-col items-center border p-20 rounded-xl hover:bg-gray-500 transition-all duration-200 hover:border-0">
+            <h1 class="text-2xl font-bold">Cybersecurity & Risk Assessment</h1>
+            <p class="text-base mt-5">
+              Build scalable, secure, and high-performance applications tailored
+              to your business needs. We design and develop web, mobile, and
+              desktop software solutions from scratch or modernize your existing
+              systems. Whether it's an internal tool, SaaS platform, or
+              enterprise application, we deliver solutions that align with your
+              goals and user requirements.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- contact us section  -->
+     <section class="flex flex-col py-10 w-full mx-auto px-10">
+      <p class="text-3xl font-bold text-center">Contact us</p>
+      <form class="flex flex-col mt-10 border rounded-xl w-4xl mx-auto py-10 p-10">
+        <p class="font-bold mb-3 ">Full Name</p>
+        <input placeholder="your full name" type="text" 
+        class=" placeholder:text-black border px-5 py-2 rounded-xl mb-5">
+        <p class="font-bold mb-3">Email</p>
+        <input placeholder="your email" type="email" 
+        class="placeholder:text-black border px-5 py-2 rounded-xl mb-5">
+        <p class="font-bold mb-3">Message</p>
+        <textarea placeholder="your message" 
+        class="placeholder:text-black border px-5 py-2 rounded-xl"></textarea>
+        <button class="bg-gray-400 rounded-xl mt-10 px-5 py-3 cursor-pointer hover:text-white hover:bg-gray-500">Submit</button>
+      </form>
+     </section>
+
+    <!-- Footer section  -->
+    <footer class="bg-gray-400 py-10 w-full mx-auto px-10">
+      <div class="flex items-center justify-between">
+        <p class="text-5xl font-bold">MW</p>
+
+        <ul class="flex items-center justify-between gap-10">
+          <li>
+            <a class="hover:underline" href="facebook.com">facbook</a>
+          </li>
+          <li>
+            <a class="hover:underline" href="twitter.com">twitter</a>
+          </li>
+          <li>
+            <a class="hover:underline" href="linkedin.com">linkedin</a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="text-center mt-5">Made With ❤️ by ICT Bootcamp Team</p>
+    </footer>
+
+
+  </body>
+</html>
